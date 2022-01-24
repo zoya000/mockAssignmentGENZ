@@ -96,8 +96,8 @@
 }
 
 
-.teamText {
-    font-family: Maitree;
+.title {
+    font-family: Orienta;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -130,4 +130,50 @@
 
 .team div {
     display: grid;
+}
+
+.contactRow {
+    display: grid;
+    grid-template-columns: 30% 43% 30%;
+    grid-template-rows: auto;
+
+    
+}
+
+.contactInfo div{
+    
+    border-width: 1%;
+    padding: 5%;
+    box-shadow: 10px 10px 5px grey;
+    
+}
+
+.contactInfo h3 {
+    
+    text-align: center;
+
+    font-family: Maitree;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #000000;
+}
+
+.contactInfo h2 {
+    font-family: Orienta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 56px;
+
+    color: #C56293;
+}
+
+
+.contactBox {
+    background-color: #F9F9F9;
+    padding: 20%;
+    width:80%;
 }
