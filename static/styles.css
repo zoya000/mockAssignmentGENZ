@@ -210,3 +210,44 @@
     left: 200px;
 }
 
+
+.table table, td, th {
+    text-align: center;
+    border: 1px solid #000000;
+    padding:1%;
+    
+}
+
+.table table {
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+.table {
+    font-family: Orienta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20;
+    line-height: 30px;
+    
+}
+
+.table th {
+    background-color: rgb(136, 129, 158);
+    padding: 1% 2%;
+
+    
+}
+
+tr:nth-child(even) td {
+    background-color: rgb(250,250,250);
+  }
+  
+tr:nth-child(odd) td {
+    background-color: rgb(233, 233, 233);
+  }
+
+
+
+
+
+
