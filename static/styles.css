@@ -179,9 +179,16 @@
 }
 
 .section {
-    padding: 5%
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #cccbce;
+    border: 2px solid #000000;
+
 }
-.section p {
+
+
+.section p, button {
     font-family: Orienta;
     font-style: normal;
     font-weight: normal;
@@ -189,6 +196,12 @@
     line-height: 30px;
     
 }
+
+button, .displayResultsP {
+    background-color: aliceblue;
+}
+
+
 .fitnessGram {
     padding-left: 5%;
     
@@ -221,6 +234,8 @@
 .table table {
     border-collapse: collapse;
     vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
 }
 .table {
     font-family: Orienta;
@@ -247,6 +262,17 @@ tr:nth-child(odd) td {
   }
 
 
+.section h2 {
+    font-family: 'Maitree', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 0px;
+
+    color: #000000;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
 
 
 

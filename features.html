@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        function myFunction() {
+            let names = '[{ "Name": "Caleb Cordsen" }, { "Name": "Field Burberow" }, { "Name": "Niles Bromige" }, { "Name": "Almeda McConway" }, { "Name": "Roby Dicken" }, { "Name": "Ring Knappett" }, { "Name": "Wilhelmine Knagges" }, { "Name": "Electra Gentil" }, { "Name": "Bartolomeo Bielby" }, { "Name": "Lizette Kanwell" }]';
+            const namesObj = JSON.parse(names);
+            var count = Object.keys(namesObj).length;
+            var randomIndex = Math.floor(Math.random() * count);
+            document.getElementById("randName").innerHTML = namesObj[randomIndex].Name;
+        }
+
+        function resetGen() {
+            document.getElementById("randName").innerHTML = "Say the magic words and a name will replace me!";
+        }
+
+        function returnMath(a, b, c) {
+            let math = (((-1*b) + Math.sqrt(Math.pow(b,2)) - (4*a*c))/(2*a));
+            return math;
+        }
+
+        
+
+    </script>
+
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -151,5 +175,39 @@
            </table>
        </div>
    </div>
+
+   <div class="section">
+    <h1 class="title">Content Request: Name Generator</h1>
+       <div>
+           <p id="randName"> Say the magic words and a name will replace me! </p>
+           <button type="button" onclick="myFunction()"> acra badaba </button>
+           <button type="button" onclick="resetGen()"> reset</button>
+       </div>
+   </div>
+
+    <div class="section"> 
+        
+        <h1 class="title"> Bug Report: Math Function</h1>
+        <h2>The two bugs in the code are:  </h2>
+        <ol>
+            <li> <p> The function call only passes in two parameters, but 3 are needed</p> </li>
+            <li> <p>There is an extra parentheses at the end of the first line (inside function definition) </p></li>
+        </ol>
+
+        <h2>Plug in values below to use for the mysterious math equation</h2>
+        <p> a: <input type="number" id="inpA"> b: <input type="number" id="inpB"> c: <input type="number" id="inpC"> </p>
+        <button type="button" onclick="mysteriousMath()">Submit</button>
+        <p id="displayResultP">Result: </p>
+        
+        <script>
+            function mysteriousMath() {
+            var inputVal = document.getElementById("inpA").value;
+            var inputB = document.getElementById("inpB").value;
+            var inputC = document.getElementById("inpC").value;
+            var mathResult = returnMath(inputVal, inputB, inputC);
+            document.getElementById("displayResultP").innerHTML = "Result: " + mathResult;
+        }
+        </script>
+    </div>
 </body>
 </html>
